@@ -16,3 +16,4 @@ Una rama por persona, un commit, un PR. No edites las líneas de los demás.
 ## La gente
 
 - Andrés Casanova-Aleman — @ndresca — 2026-07-22
+- Santiago Casanova — @santiagofcas — 2026-08-17
