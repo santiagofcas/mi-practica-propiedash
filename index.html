@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Práctica · Propiedash</title>
+<style>
+  :root {
+    --bg: #F7F7F5; --card: #FFFFFF; --border: #E8E8E3; --ink: #0A0A0A;
+    --muted: #525249; --dim: #8A8A7F; --accent: #C7FF02; --on-accent: #0A0A0A;
+    --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font); line-height: 1.6; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -0.03em; font-size: 20px; }
+  .brand .dot { width: 22px; height: 22px; border-radius: 5px; background: var(--accent); }
+  .tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--on-accent); background: var(--accent); padding: 3px 9px; border-radius: 9999px; }
+  h1 { font-size: 34px; letter-spacing: -0.03em; margin: 28px 0 10px; }
+  p { color: var(--muted); max-width: 60ch; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; margin: 18px 0; }
+  .card h2 { font-size: 16px; margin: 0 0 6px; }
+  .card p { margin: 0 0 12px; font-size: 14.5px; }
+  a.btn { display: inline-block; background: var(--accent); color: var(--on-accent); font-weight: 700; font-size: 14px; text-decoration: none; padding: 9px 16px; border-radius: 8px; }
+  a.link { color: #486400; }
+  code { font-family: var(--mono); font-size: 0.86em; background: rgba(199,255,2,0.16); padding: 1px 5px; border-radius: 4px; }
+  .foot { color: var(--dim); font-size: 13px; margin-top: 32px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>Propiedash <span class="tag">Práctica</span></div>
+    <h1>El patio de práctica</h1>
+    <p>Aquí los desarrolladores nuevos aprenden construyendo, sin tocar producción. Todo lo
+    que ves aquí está en vivo en la web, publicado solo con hacer merge a <code>main</code>,
+    igual que se publica propiedash.com.</p>
+
+    <div class="card">
+      <h2>La tarjeta de ejemplo</h2>
+      <p>El punto de partida de todos los proyectos: una tarjeta de propiedad con la marca de Propiedash.</p>
+      <a class="btn" href="./ejemplo/tarjeta-ejemplo.html">Ver la tarjeta</a>
+    </div>
+
+    <div class="card">
+      <h2>Los proyectos de cada quien</h2>
+      <p>Cada dev construye sus proyectos en su propia carpeta. Las tarjetas van en
+      <code>propiedades/</code> y los proyectos en <code>proyectos/</code>. La lista completa,
+      con lo que enseña cada uno, está en <code>PROYECTOS.md</code>.</p>
+      <a class="link" href="https://github.com/ndresca/propiedash-practice">Ver el repositorio en GitHub</a>
+    </div>
+
+    <p class="foot">Cuando tu PR se fusiona, tu proyecto queda en vivo en una URL de este mismo
+    sitio. Eso es un deploy: lo mismo que hace propiedash.com cuando publicamos un cambio.</p>
+  </div>
+</body>
+</html>
